@@ -2,6 +2,8 @@
 
 using namespace std;
 
-Block::Block(unsigned int id){}
+Block::Block(unsigned int pid){
+  id = pid;
+}
 
-
+Block::~Block() {}

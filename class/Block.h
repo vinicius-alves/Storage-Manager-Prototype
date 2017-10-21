@@ -5,8 +5,12 @@ using namespace std;
 
 class Block{
 
+	private:
+		unsigned int id;
+
 	public:
-		Block(unsigned int id);
+		Block(unsigned int);
+		~Block();
 
 };
 
