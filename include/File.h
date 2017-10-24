@@ -64,7 +64,7 @@ class File{
 		 * @param function
 		 * @return
 		 */
-		virtual Record find(bool (*function)(Field, Field)) =0;
+		//virtual Record find(bool (*function)(Field, Field)) =0;
 		/**
 		 * @brief Descrição curta de findNext()
 		 * @param function
@@ -73,26 +73,26 @@ class File{
 		 * ou de lista de valores. Ela deve retornar True quando o campo satisfizer
 		 * a condição
 		 */
-		virtual Record findNext(bool (*function)(Field, Field)) =0;
+		//virtual Record findNext(bool (*function)(Field, Field)) =0;
 		/**
 		 * @brief Descrição curta de delete_curr()
 		 */
-		virtual void delete_curr() =0;
+		//virtual void delete_curr() =0;
 		/**
 		 * @brief Descrição curta de insert()
 		 */
-		virtual void insert() =0;
+		//virtual void insert() =0;
 		/**
 		 * @brief Descrição curta de write()
 		 * @return
 		 */
-		virtual bool write(Block) =0;
+		//virtual bool write(Block) =0;
 		/**
 		 * @brief Descrição curta de read()
 		 * @param block
 		 * @return
 		 */
-		virtual Block read () =0;
+		//virtual Block read () =0;
 
 	protected:
 		/** Descrição de fileHeader */

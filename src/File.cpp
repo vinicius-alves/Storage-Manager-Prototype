@@ -10,10 +10,6 @@
 
 using namespace std;
 
-File::scan(){
-
-}
-
 File::File(const char * path):path(path){
 	this->path = path;
 	this->fileHeader = new FileHeader(&file);
@@ -24,25 +20,25 @@ File::~File(){
 	delete this->fileHeader;
 }
 
-File::open(){
+void File::open(){
 	file.open(this->path, ios::binary);
 	if (!file.is_open()){
 		throw invalid_argument( "File not found!" );
 	}
 }
 
-File::close(){
+void File::close(){
 	file.close();
 }
 
-File::save(){
-	file.flush();
-}
-
-File::reset(){
+void File::save(){
 
 }
 
-File::modify(bool (*function)(Field, Field)){
+void File::reset(){
+
+}
+
+void File::modify(){
 
 }
