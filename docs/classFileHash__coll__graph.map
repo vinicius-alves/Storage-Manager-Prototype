@@ -1,5 +1,6 @@
 <map id="FileHash" name="FileHash">
-<area shape="rect" id="node2" href="$classFile.html" title="File" alt="" coords="65,97,108,125"/>
-<area shape="rect" id="node3" href="$classRecord.html" title="Record" alt="" coords="5,5,70,33"/>
-<area shape="rect" id="node4" href="$classFileHeader.html" title="FileHeader" alt="" coords="94,5,181,33"/>
+<area shape="rect" id="node2" href="$classFile.html" title="File" alt="" coords="57,205,100,233"/>
+<area shape="rect" id="node3" href="$classRecord.html" title="Record" alt="" coords="5,113,70,141"/>
+<area shape="rect" id="node4" href="$classFileHeader.html" title="FileHeader" alt="" coords="94,113,181,141"/>
+<area shape="rect" id="node5" href="$classDate.html" title="Date" alt="" coords="113,5,162,33"/>
 </map>

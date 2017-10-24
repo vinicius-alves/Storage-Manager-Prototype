@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>Storage-Manager-Prototype: Código-Fonte de class/FileHeader.h</title>
+<title>Storage-Manager-Prototype: Código-Fonte de include/FileHeader.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_b159045c86742e23382de6113e3621b5.html">class</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -91,29 +91,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
 <a href="FileHeader_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef FILEHEADER_H</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define FILEHEADER_H</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classFileHeader.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classFileHeader.html">FileHeader</a>{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classFileHeader.html">FileHeader</a>(ifstream *file);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> updateHeader();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classFileHeader.html#af4622c5c115d1dda4db2a2008461979d">   35</a></span>&#160;        ifstream *<a class="code" href="classFileHeader.html#af4622c5c115d1dda4db2a2008461979d">file</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Date_8h.html">Date.h</a>&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef FILEHEADER_H</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define FILEHEADER_H</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classFileHeader.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classFileHeader.html">FileHeader</a>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classFileHeader.html">FileHeader</a>(ifstream *file);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> updateHeader();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classFileHeader.html#af4622c5c115d1dda4db2a2008461979d">   36</a></span>&#160;        ifstream *<a class="code" href="classFileHeader.html#af4622c5c115d1dda4db2a2008461979d">file</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classFileHeader.html#a34d729232c491250d27af2a64db92c4c">   39</a></span>&#160;        <a class="code" href="classDate.html">Date</a> <a class="code" href="classFileHeader.html#a34d729232c491250d27af2a64db92c4c">data_criacao</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classFileHeader_html"><div class="ttname"><a href="classFileHeader.html">FileHeader</a></div><div class="ttdef"><b>Definition:</b> FileHeader.h:19</div></div>
-<div class="ttc" id="classFileHeader_html_af4622c5c115d1dda4db2a2008461979d"><div class="ttname"><a href="classFileHeader.html#af4622c5c115d1dda4db2a2008461979d">FileHeader::file</a></div><div class="ttdeci">ifstream * file</div><div class="ttdef"><b>Definition:</b> FileHeader.h:35</div></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classFileHeader.html#a1f01aeb63d8878e003cb07f9e9b8cda9">   42</a></span>&#160;        <a class="code" href="classDate.html">Date</a> <a class="code" href="classFileHeader.html#a1f01aeb63d8878e003cb07f9e9b8cda9">data_modificacao</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classFileHeader.html#ac090b3cc3b997baeabc0b140c5220219">   45</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classFileHeader.html#ac090b3cc3b997baeabc0b140c5220219">size</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classFileHeader.html#ae7ca831f4e09fbd2d512bfe602e5d028">   50</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="classFileHeader.html#ae7ca831f4e09fbd2d512bfe602e5d028">path</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classFileHeader.html#a3a3c5a91a50819b9e46954179ee89e01">   54</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="classFileHeader.html#a3a3c5a91a50819b9e46954179ee89e01">tipo</a> {SINGLE, MULTI};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classFileHeader_html"><div class="ttname"><a href="classFileHeader.html">FileHeader</a></div><div class="ttdef"><b>Definition:</b> FileHeader.h:20</div></div>
+<div class="ttc" id="classFileHeader_html_a3a3c5a91a50819b9e46954179ee89e01"><div class="ttname"><a href="classFileHeader.html#a3a3c5a91a50819b9e46954179ee89e01">FileHeader::tipo</a></div><div class="ttdeci">tipo</div><div class="ttdef"><b>Definition:</b> FileHeader.h:54</div></div>
+<div class="ttc" id="classFileHeader_html_ae7ca831f4e09fbd2d512bfe602e5d028"><div class="ttname"><a href="classFileHeader.html#ae7ca831f4e09fbd2d512bfe602e5d028">FileHeader::path</a></div><div class="ttdeci">const char * path</div><div class="ttdef"><b>Definition:</b> FileHeader.h:50</div></div>
+<div class="ttc" id="classFileHeader_html_af4622c5c115d1dda4db2a2008461979d"><div class="ttname"><a href="classFileHeader.html#af4622c5c115d1dda4db2a2008461979d">FileHeader::file</a></div><div class="ttdeci">ifstream * file</div><div class="ttdef"><b>Definition:</b> FileHeader.h:36</div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classFileHeader_html_ac090b3cc3b997baeabc0b140c5220219"><div class="ttname"><a href="classFileHeader.html#ac090b3cc3b997baeabc0b140c5220219">FileHeader::size</a></div><div class="ttdeci">unsigned int size</div><div class="ttdef"><b>Definition:</b> FileHeader.h:45</div></div>
+<div class="ttc" id="classDate_html"><div class="ttname"><a href="classDate.html">Date</a></div><div class="ttdef"><b>Definition:</b> Date.h:16</div></div>
+<div class="ttc" id="classFileHeader_html_a1f01aeb63d8878e003cb07f9e9b8cda9"><div class="ttname"><a href="classFileHeader.html#a1f01aeb63d8878e003cb07f9e9b8cda9">FileHeader::data_modificacao</a></div><div class="ttdeci">Date data_modificacao</div><div class="ttdef"><b>Definition:</b> FileHeader.h:42</div></div>
+<div class="ttc" id="classFileHeader_html_a34d729232c491250d27af2a64db92c4c"><div class="ttname"><a href="classFileHeader.html#a34d729232c491250d27af2a64db92c4c">FileHeader::data_criacao</a></div><div class="ttdeci">Date data_criacao</div><div class="ttdef"><b>Definition:</b> FileHeader.h:39</div></div>
+<div class="ttc" id="Date_8h_html"><div class="ttname"><a href="Date_8h.html">Date.h</a></div><div class="ttdoc">Arquivo de declaração da classe Date. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

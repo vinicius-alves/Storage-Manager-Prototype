@@ -1,6 +1,7 @@
-<map id="class/FileSequential.h" name="class/FileSequential.h">
-<area shape="rect" id="node2" href="$File_8h.html" title="Arquivo de declaração da classe File. " alt="" coords="201,81,255,109"/>
-<area shape="rect" id="node5" href="$FileHeader_8h.html" title="Arquivo de declaração da classe FileHeader. " alt="" coords="26,157,124,185"/>
-<area shape="rect" id="node6" href="$Block_8h.html" title="Arquivo de declaração da classe Block. " alt="" coords="148,157,213,185"/>
-<area shape="rect" id="node7" href="$Record_8h.html" title="Arquivo de declaração da classe Record. " alt="" coords="237,157,313,185"/>
+<map id="include/FileSequential.h" name="include/FileSequential.h">
+<area shape="rect" id="node2" href="$File_8h.html" title="Arquivo de declaração da classe File. " alt="" coords="166,81,220,109"/>
+<area shape="rect" id="node5" href="$FileHeader_8h.html" title="Arquivo de declaração da classe FileHeader. " alt="" coords="303,157,401,185"/>
+<area shape="rect" id="node7" href="$Block_8h.html" title="Arquivo de declaração da classe Block. " alt="" coords="114,157,179,185"/>
+<area shape="rect" id="node8" href="$Record_8h.html" title="Arquivo de declaração da classe Record. " alt="" coords="204,157,279,185"/>
+<area shape="rect" id="node6" href="$Date_8h.html" title="Arquivo de declaração da classe Date. " alt="" coords="322,233,382,261"/>
 </map>

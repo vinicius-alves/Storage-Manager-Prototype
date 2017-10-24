@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['file',['file',['../classFile.html#a6266bf109a870f5b0da9c4bb110d2d90',1,'File::file()'],['../classFileHeader.html#af4622c5c115d1dda4db2a2008461979d',1,'FileHeader::file()']]],
-  ['fileheader',['fileHeader',['../classFile.html#a7fd047bf66158601e3888e11ab5c2eef',1,'File']]]
+  ['curr_5freg',['curr_reg',['../classFile.html#a3e13ddd63c2f4a330d980043ae5cd862',1,'File']]]
 ];

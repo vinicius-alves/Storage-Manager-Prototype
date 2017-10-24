@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['close',['close',['../classFile.html#aab43a2d06dd0cce71b7ebe755937c39d',1,'File']]],
-  ['curr_5freg',['curr_reg',['../classFile.html#a3e13ddd63c2f4a330d980043ae5cd862',1,'File']]]
+  ['block',['Block',['../classBlock.html',1,'Block'],['../classBlock.html#ae9e764c17f4412c8b2ed84aeac11ca5d',1,'Block::Block()']]],
+  ['block_2ecpp',['Block.cpp',['../Block_8cpp.html',1,'']]],
+  ['block_2eh',['Block.h',['../Block_8h.html',1,'']]]
 ];

@@ -1,12 +1,12 @@
-<map id="class/Block.h" name="class/Block.h">
-<area shape="rect" id="node2" href="$File_8h.html" title="Arquivo de declaração da classe File. " alt="" coords="308,81,396,109"/>
-<area shape="rect" id="node11" href="$Block_8cpp.html" title="Arquivo de implementação da classe Block. " alt="" coords="419,81,533,109"/>
-<area shape="rect" id="node3" href="$FileSequential_8h.html" title="Arquivo de declaração da classe FileSequential. " alt="" coords="356,157,507,185"/>
-<area shape="rect" id="node6" href="$FileHash_8h.html" title="Arquivo de declaração da classe FileHash. " alt="" coords="68,157,187,185"/>
-<area shape="rect" id="node8" href="$FileHeap_8h.html" title="Arquivo de declaração da classe FileHeap. " alt="" coords="212,157,332,185"/>
-<area shape="rect" id="node10" href="$File_8cpp.html" title="Arquivo de implementação da classe File. " alt="" coords="532,157,634,185"/>
-<area shape="rect" id="node4" href="$main_8cpp.html" title="main.cpp" alt="" coords="162,233,238,261"/>
-<area shape="rect" id="node5" href="$FileSequential_8cpp.html" title="Arquivo de implementação da classe FileSequential. " alt="" coords="420,233,585,261"/>
-<area shape="rect" id="node7" href="$FileHash_8cpp.html" title="Arquivo de implementação da classe FileHash. " alt="" coords="5,233,139,261"/>
-<area shape="rect" id="node9" href="$FileHeap_8cpp.html" title="Arquivo de implementação da classe FileHeap. " alt="" coords="262,233,396,261"/>
+<map id="include/Block.h" name="include/Block.h">
+<area shape="rect" id="node2" href="$File_8h.html" title="Arquivo de declaração da classe File. " alt="" coords="297,81,397,109"/>
+<area shape="rect" id="node11" href="$Block_8cpp.html" title="Arquivo de implementação da classe Block. " alt="" coords="421,81,521,109"/>
+<area shape="rect" id="node3" href="$FileHash_8h.html" title="Arquivo de declaração da classe FileHash. " alt="" coords="40,157,171,185"/>
+<area shape="rect" id="node6" href="$FileHeap_8h.html" title="Arquivo de declaração da classe FileHeap. " alt="" coords="196,157,327,185"/>
+<area shape="rect" id="node8" href="$FileSequential_8h.html" title="Arquivo de declaração da classe FileSequential. " alt="" coords="351,157,514,185"/>
+<area shape="rect" id="node10" href="$File_8cpp.html" title="Arquivo de implementação da classe File. " alt="" coords="538,157,628,185"/>
+<area shape="rect" id="node4" href="$FileHash_8cpp.html" title="Arquivo de implementação da classe FileHash. " alt="" coords="5,233,126,261"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="main.cpp" alt="" coords="151,233,226,261"/>
+<area shape="rect" id="node7" href="$FileHeap_8cpp.html" title="Arquivo de implementação da classe FileHeap. " alt="" coords="250,233,372,261"/>
+<area shape="rect" id="node9" href="$FileSequential_8cpp.html" title="Arquivo de implementação da classe FileSequential. " alt="" coords="396,233,549,261"/>
 </map>

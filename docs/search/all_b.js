@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['write',['write',['../classFile.html#a4b8e235629113af5ed61d2134c1795b9',1,'File::write()'],['../classFileHash.html#ac0b53af43516b0d0d41402af3fd16deb',1,'FileHash::write()'],['../classFileHeap.html#abd9c6797e0dc0faf490f484059daefa6',1,'FileHeap::write()'],['../classFileSequential.html#ad57063533bc0907c023fa968f35f50cd',1,'FileSequential::write()']]]
+  ['save',['save',['../classFile.html#a5db8c9ed415671026accfc6584a47da8',1,'File']]],
+  ['scan',['scan',['../classFile.html#ab170b549eb0f0f689c9261d15b6286b3',1,'File']]],
+  ['seg',['seg',['../classDate.html#adbab573797d13e4db55457208b94189a',1,'Date']]],
+  ['single',['SINGLE',['../classFileHeader.html#a3a3c5a91a50819b9e46954179ee89e01abf8f75c9e2ba1d77612a2f9888a1ce41',1,'FileHeader']]],
+  ['size',['size',['../classFileHeader.html#ac090b3cc3b997baeabc0b140c5220219',1,'FileHeader']]]
 ];

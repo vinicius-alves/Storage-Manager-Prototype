@@ -1,5 +1,6 @@
-<map id="class/File.h" name="class/File.h">
-<area shape="rect" id="node4" href="$FileHeader_8h.html" title="Arquivo de declaração da classe FileHeader. " alt="" coords="32,81,130,109"/>
-<area shape="rect" id="node5" href="$Block_8h.html" title="Arquivo de declaração da classe Block. " alt="" coords="204,81,269,109"/>
-<area shape="rect" id="node6" href="$Record_8h.html" title="Arquivo de declaração da classe Record. " alt="" coords="294,81,369,109"/>
+<map id="include/File.h" name="include/File.h">
+<area shape="rect" id="node4" href="$FileHeader_8h.html" title="Arquivo de declaração da classe FileHeader. " alt="" coords="76,81,174,109"/>
+<area shape="rect" id="node6" href="$Block_8h.html" title="Arquivo de declaração da classe Block. " alt="" coords="248,81,313,109"/>
+<area shape="rect" id="node7" href="$Record_8h.html" title="Arquivo de declaração da classe Record. " alt="" coords="338,81,413,109"/>
+<area shape="rect" id="node5" href="$Date_8h.html" title="Arquivo de declaração da classe Date. " alt="" coords="95,157,155,185"/>
 </map>
