@@ -36,7 +36,10 @@ void File::save(){
 }
 
 void File::reset(){
-
+	if (file.eof()) {
+		file.clear();	
+	}
+	file.seekg(file.beg);
 }
 
 void File::modify(){
