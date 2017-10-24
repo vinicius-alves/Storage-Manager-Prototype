@@ -23,4 +23,19 @@ Block FileHash::read (){
 }
 
 
+Record FileHash::find(bool (*function)(Field, Field)) {
+	Record rec = Record();
+	return rec;
+}
+
+Record FileHash::findNext(bool (*function)(Field, Field)){
+	Record rec = Record();
+	return rec;
+}
+
+void FileHash::delete_curr(){}
+
+void FileHash::insert(){}
+
+
 

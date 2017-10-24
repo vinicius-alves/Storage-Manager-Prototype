@@ -21,3 +21,17 @@ Block FileSequential::read (){
 
 	return block;
 }
+
+Record FileSequential::find(bool (*function)(Field, Field)) {
+	Record rec = Record();
+	return rec;
+}
+
+Record FileSequential::findNext(bool (*function)(Field, Field)){
+	Record rec = Record();
+	return rec;
+}
+
+void FileSequential::delete_curr(){}
+
+void FileSequential::insert(){}

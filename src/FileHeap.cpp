@@ -22,4 +22,16 @@ Block FileHeap::read (){
 	return block;
 }
 
+Record FileHeap::find(bool (*function)(Field, Field)) {
+	Record rec = Record();
+	return rec;
+}
 
+Record FileHeap::findNext(bool (*function)(Field, Field)){
+	Record rec = Record();
+	return rec;
+}
+
+void FileHeap::delete_curr(){}
+
+void FileHeap::insert(){}
