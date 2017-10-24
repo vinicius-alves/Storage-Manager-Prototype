@@ -1,0 +1,5 @@
+<map id="File" name="File">
+<area shape="rect" id="node2" href="$classFileHash.html" title="FileHash" alt="" coords="5,81,79,109"/>
+<area shape="rect" id="node3" href="$classFileHeap.html" title="FileHeap" alt="" coords="104,81,178,109"/>
+<area shape="rect" id="node4" href="$classFileSequential.html" title="FileSequential" alt="" coords="203,81,309,109"/>
+</map>

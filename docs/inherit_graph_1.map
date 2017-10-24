@@ -1,0 +1,6 @@
+<map id="Representação gráfica da hiearquia da classe" name="Representação gráfica da hiearquia da classe">
+<area shape="rect" id="node1" href="$classFile.html" title="File" alt="" coords="5,57,48,85"/>
+<area shape="rect" id="node2" href="$classFileHash.html" title="FileHash" alt="" coords="112,5,186,33"/>
+<area shape="rect" id="node3" href="$classFileHeap.html" title="FileHeap" alt="" coords="112,57,186,85"/>
+<area shape="rect" id="node4" href="$classFileSequential.html" title="FileSequential" alt="" coords="96,109,202,137"/>
+</map>
