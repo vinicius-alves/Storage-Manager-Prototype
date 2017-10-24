@@ -98,9 +98,6 @@ class File{
 		/** Descrição de fileHeader */
 		FileHeader *fileHeader;
 
-		/** Descrição de path */
-		const char * path;
-
 		/** Descrição de file */
 		ifstream file;
 
