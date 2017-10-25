@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>Storage-Manager-Prototype: Código-Fonte de include/File.h</title>
+<title>Storage Manager Prototype: Código-Fonte de include/File.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Storage-Manager-Prototype
+   <div id="projectname">Storage Manager Prototype
    </div>
   </td>
  </tr>
@@ -94,53 +94,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="FileHeader_8h.html">FileHeader.h</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Block_8h.html">Block.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Record_8h.html">Record.h</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef FILE_H</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="File_8h.html#a63c9cc158ec03cd45228a04361bf4548">   17</a></span>&#160;<span class="preprocessor">#define FILE_H</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classFile.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classFile.html">File</a>{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> scan();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classFile.html">File</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * path);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        ~<a class="code" href="classFile.html">File</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">void</span> open();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> close();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">void</span> save();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> reset();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> modify();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classRecord.html">Record</a> find(<span class="keywordtype">bool</span> (*<span class="keyword">function</span>)(Field, Field)) =0;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classRecord.html">Record</a> findNext(<span class="keywordtype">bool</span> (*<span class="keyword">function</span>)(Field, Field)) =0;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> delete_curr() =0;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> insert() =0;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> write(<a class="code" href="classBlock.html">Block</a>) =0;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classBlock.html">Block</a> read () =0;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classFile.html#a7fd047bf66158601e3888e11ab5c2eef">   99</a></span>&#160;        <a class="code" href="classFileHeader.html">FileHeader</a> *<a class="code" href="classFile.html#a7fd047bf66158601e3888e11ab5c2eef">fileHeader</a>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classFile.html#a6266bf109a870f5b0da9c4bb110d2d90">  102</a></span>&#160;        ifstream <a class="code" href="classFile.html#a6266bf109a870f5b0da9c4bb110d2d90">file</a>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classFile.html#a3e13ddd63c2f4a330d980043ae5cd862">  105</a></span>&#160;        <a class="code" href="classRecord.html">Record</a> * <a class="code" href="classFile.html#a3e13ddd63c2f4a330d980043ae5cd862">curr_reg</a>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Field_8h.html">Field.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef FILE_H</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="File_8h.html#a63c9cc158ec03cd45228a04361bf4548">   18</a></span>&#160;<span class="preprocessor">#define FILE_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classFile.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classFile.html">File</a>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> scan();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classFile.html#a044825089bf2f4854d16381747e1d6ad">   35</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="classFile.html#a044825089bf2f4854d16381747e1d6ad">path</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classFile.html">File</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * path);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        ~<a class="code" href="classFile.html">File</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> open();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">void</span> close();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span> save();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> reset();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> modify();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classRecord.html">Record</a> find(<span class="keywordtype">bool</span> (*<span class="keyword">function</span>)(<a class="code" href="classField.html">Field</a>, <a class="code" href="classField.html">Field</a>)) =0;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classRecord.html">Record</a> findNext(<span class="keywordtype">bool</span> (*<span class="keyword">function</span>)(<a class="code" href="classField.html">Field</a>, <a class="code" href="classField.html">Field</a>)) =0;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> delete_curr() =0;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> insert() =0;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> write(<a class="code" href="classBlock.html">Block</a>) =0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classBlock.html">Block</a> read () =0;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classFile.html#a7fd047bf66158601e3888e11ab5c2eef">  107</a></span>&#160;        <a class="code" href="classFileHeader.html">FileHeader</a> *<a class="code" href="classFile.html#a7fd047bf66158601e3888e11ab5c2eef">fileHeader</a>;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classFile.html#a6266bf109a870f5b0da9c4bb110d2d90">  110</a></span>&#160;        ifstream <a class="code" href="classFile.html#a6266bf109a870f5b0da9c4bb110d2d90">file</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classFile.html#a3e13ddd63c2f4a330d980043ae5cd862">  113</a></span>&#160;        <a class="code" href="classRecord.html">Record</a> * <a class="code" href="classFile.html#a3e13ddd63c2f4a330d980043ae5cd862">curr_reg</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classFileHeader_html"><div class="ttname"><a href="classFileHeader.html">FileHeader</a></div><div class="ttdef"><b>Definition:</b> FileHeader.h:20</div></div>
+<div class="ttc" id="classField_html"><div class="ttname"><a href="classField.html">Field</a></div><div class="ttdef"><b>Definition:</b> Field.h:16</div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
-<div class="ttc" id="classFile_html_a3e13ddd63c2f4a330d980043ae5cd862"><div class="ttname"><a href="classFile.html#a3e13ddd63c2f4a330d980043ae5cd862">File::curr_reg</a></div><div class="ttdeci">Record * curr_reg</div><div class="ttdef"><b>Definition:</b> File.h:105</div></div>
+<div class="ttc" id="classFile_html_a3e13ddd63c2f4a330d980043ae5cd862"><div class="ttname"><a href="classFile.html#a3e13ddd63c2f4a330d980043ae5cd862">File::curr_reg</a></div><div class="ttdeci">Record * curr_reg</div><div class="ttdef"><b>Definition:</b> File.h:113</div></div>
+<div class="ttc" id="classFile_html_a044825089bf2f4854d16381747e1d6ad"><div class="ttname"><a href="classFile.html#a044825089bf2f4854d16381747e1d6ad">File::path</a></div><div class="ttdeci">const char * path</div><div class="ttdoc">Caminho para armazenamento do arquivo. </div><div class="ttdef"><b>Definition:</b> File.h:35</div></div>
 <div class="ttc" id="classRecord_html"><div class="ttname"><a href="classRecord.html">Record</a></div><div class="ttdef"><b>Definition:</b> Record.h:16</div></div>
 <div class="ttc" id="FileHeader_8h_html"><div class="ttname"><a href="FileHeader_8h.html">FileHeader.h</a></div><div class="ttdoc">Arquivo de declaração da classe FileHeader. </div></div>
-<div class="ttc" id="classFile_html_a7fd047bf66158601e3888e11ab5c2eef"><div class="ttname"><a href="classFile.html#a7fd047bf66158601e3888e11ab5c2eef">File::fileHeader</a></div><div class="ttdeci">FileHeader * fileHeader</div><div class="ttdef"><b>Definition:</b> File.h:99</div></div>
-<div class="ttc" id="classFile_html_a6266bf109a870f5b0da9c4bb110d2d90"><div class="ttname"><a href="classFile.html#a6266bf109a870f5b0da9c4bb110d2d90">File::file</a></div><div class="ttdeci">ifstream file</div><div class="ttdef"><b>Definition:</b> File.h:102</div></div>
+<div class="ttc" id="classFile_html_a7fd047bf66158601e3888e11ab5c2eef"><div class="ttname"><a href="classFile.html#a7fd047bf66158601e3888e11ab5c2eef">File::fileHeader</a></div><div class="ttdeci">FileHeader * fileHeader</div><div class="ttdef"><b>Definition:</b> File.h:107</div></div>
+<div class="ttc" id="classFile_html_a6266bf109a870f5b0da9c4bb110d2d90"><div class="ttname"><a href="classFile.html#a6266bf109a870f5b0da9c4bb110d2d90">File::file</a></div><div class="ttdeci">ifstream file</div><div class="ttdef"><b>Definition:</b> File.h:110</div></div>
+<div class="ttc" id="Field_8h_html"><div class="ttname"><a href="Field_8h.html">Field.h</a></div><div class="ttdoc">Arquivo de declaração da classe Field. </div></div>
 <div class="ttc" id="Record_8h_html"><div class="ttname"><a href="Record_8h.html">Record.h</a></div><div class="ttdoc">Arquivo de declaração da classe Record. </div></div>
-<div class="ttc" id="classFile_html"><div class="ttname"><a href="classFile.html">File</a></div><div class="ttdef"><b>Definition:</b> File.h:22</div></div>
+<div class="ttc" id="classFile_html"><div class="ttname"><a href="classFile.html">File</a></div><div class="ttdef"><b>Definition:</b> File.h:24</div></div>
 <div class="ttc" id="classBlock_html"><div class="ttname"><a href="classBlock.html">Block</a></div><div class="ttdef"><b>Definition:</b> Block.h:16</div></div>
 <div class="ttc" id="Block_8h_html"><div class="ttname"><a href="Block_8h.html">Block.h</a></div><div class="ttdoc">Arquivo de declaração da classe Block. </div></div>
 </div><!-- fragment --></div><!-- contents -->
