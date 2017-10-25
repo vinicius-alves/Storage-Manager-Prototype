@@ -30,4 +30,4 @@ Date::Date(int diaP, int mesP, int anoP, int horaP, int minP, int segP){
 	seg = segP;
 }
 
-Block::~Block() {}
+Date::~Date() {}
