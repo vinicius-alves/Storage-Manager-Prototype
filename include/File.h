@@ -10,6 +10,7 @@
 #include "FileHeader.h"
 #include "Block.h"
 #include "Record.h"
+#include "Field.h"
 
 using namespace std;
 
@@ -26,6 +27,11 @@ class File{
 	 	* @brief Altera curr_reg para apontar para o próximo registro.
 	 	*/
 		void scan();
+
+		/**
+	 	* @brief Caminho para armazenamento do arquivo.
+	 	*/
+		const char *path;
 
 	public:
 		/**

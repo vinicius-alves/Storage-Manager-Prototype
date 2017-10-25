@@ -12,6 +12,8 @@ SRCS:=$(SRCS) src/FileHeader.cpp
 SRCS:=$(SRCS) src/FileHeap.cpp 
 SRCS:=$(SRCS) src/FileSequential.cpp
 SRCS:=$(SRCS) src/Record.cpp
+SRCS:=$(SRCS) src/Field.cpp
+SRCS:=$(SRCS) src/Date.cpp
 SRCS:=$(SRCS) main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
@@ -26,4 +28,4 @@ $(TARGET): $(OBJS)
 	$(CC) $(CXXFLAGS) -c $<  -o $@
 
 clean:
-	$(RM) *.o $(TARGET)
+	$(RM) *.o src/*.o $(TARGET)
