@@ -11,7 +11,7 @@ using namespace std;
 #define FIELD_H
 
 /**
- * Descrição da classe Block
+ * Classe que representa um campo de uma tabela
  */
 class Field{
 	public:

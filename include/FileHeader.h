@@ -15,18 +15,18 @@ using namespace std;
 #define FILEHEADER_H
 
 /**
- * Descrição da classe FileHeader
+ * Classe que representa um cabeçalho, ou header, de um arquivo
  */
 class FileHeader{
 
 	public:
 	   /**
-	    * @brief Descrição curta de FileHeader(ifstream *file)
+	    * @brief Construtor
 	    * @param file
 	    */
 		FileHeader(ifstream *file);
 	   /**
-		* @brief Descrição curta de updateHeader()
+		* @brief Atualiza o header
 		* @param file
 		*/
 		void updateHeader();

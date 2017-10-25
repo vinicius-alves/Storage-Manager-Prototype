@@ -11,7 +11,7 @@ using namespace std;
 #define RECORD_H
 
 /**
- * Descrição da classe Record
+ * Classe que representa um Registro de uma tabela
  */
 class Record{
 
