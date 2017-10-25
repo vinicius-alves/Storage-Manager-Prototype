@@ -17,7 +17,8 @@ using namespace std;
 #define FILE_H
 
 /**
- * Descrição da classe File
+ * Classe para abstração de arquivos. É uma classe virtual, que terá 3 classes filhas:
+ * FileHash, FileHeap e FileSequential.
  */
 class File{
 
@@ -29,22 +30,20 @@ class File{
 
 	public:
 		/**
-		 * @brief Descrição curta de File(const char * path)
+		 * @brief Construtor com parâmetro path, que indica o caminho no sistema de arquivos
 		 * @param path
 		 */
 		File(const char * path);
 		/**
-		 * @brief Descrição curta de ~File()
+		 * @brief Destrutor
 		 */
 		~File();
 		/**
-		 * @brief Descrição curta de open()
-		 * @param path
+		 * @brief "Abre" o arquivo, associando o objeto ifstream chamado file ao arquivo identificado pelo path
 		 */
 		void open();
 		/**
-		 * @brief Descrição curta de close()
-		 * Descricao completa (opcional).
+		 * @brief "Fecha" o arquivo, desassociando o objeto ifstream chamado file do arquivo outrora associado
 		 */
 		void close();
 		/**
@@ -60,48 +59,51 @@ class File{
 		 */
 		void modify();
 		/**
-		 * @brief Descrição curta de find()
+		 * @brief Encontra um registro que satifaz a função function, retornando true
 		 * @param function
+		 * function pode ser uma função do tipo de valor único, de faixa de valores
+		 * ou de lista de valores. Ela deve retornar True quando o campo satisfizer
+		 * a condição
 		 * @return
 		 */
 		virtual Record find(bool (*function)(Field, Field)) =0;
 		/**
 		 * @brief Descrição curta de findNext()
 		 * @param function
-		 * @return
 		 * function pode ser uma função do tipo de valor único, de faixa de valores
 		 * ou de lista de valores. Ela deve retornar True quando o campo satisfizer
 		 * a condição
+		 * @return
 		 */
 		virtual Record findNext(bool (*function)(Field, Field)) =0;
 		/**
-		 * @brief Descrição curta de delete_curr()
+		 * @brief Deleta o registro atual (apontado pelo atributo curr_reg)
 		 */
 		virtual void delete_curr() =0;
 		/**
-		 * @brief Descrição curta de insert()
+		 * @brief Insere um novo registro
 		 */
 		virtual void insert() =0;
 		/**
-		 * @brief Descrição curta de write()
+		 * @brief Escrita simples no arquivo
 		 * @return
 		 */
 		virtual bool write(Block) =0;
 		/**
-		 * @brief Descrição curta de read()
+		 * @brief Leitura simples do arquivo
 		 * @param block
 		 * @return
 		 */
 		virtual Block read () =0;
 
 	protected:
-		/** Descrição de fileHeader */
+		/** Header associado ao arquivo */
 		FileHeader *fileHeader;
 
-		/** Descrição de file */
+		/** Objeto ifstream que será associado a um arquivo */
 		ifstream file;
 
-		/** Descrição de curr_reg */
+		/** Ponteiro para o registro atual */
 		Record * curr_reg;
 
 };

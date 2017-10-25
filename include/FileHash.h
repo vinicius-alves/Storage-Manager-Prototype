@@ -14,7 +14,7 @@ using namespace std;
 #define FILEHASH_H
 
 /**
- * Descrição da classe FileHash
+ * Classe que herda da classe File e implementa seus métodos virtuais.
  */
 class FileHash : public File {
 
@@ -55,6 +55,14 @@ class FileHash : public File {
 		 * @return
 		 */
 		Block read ();
+
+		/**
+		 * @brief Função hash que define onde o registro deve estar dentro do arquivo
+		 * @param key
+		 * key é a chave do registro
+		 * @return
+		 */
+		unsigned int hash(unsigned int key)
 
 };
 
