@@ -24,13 +24,24 @@ class Date{
 		int seg;
 
 	public:
-		/** Construtor default */
+		/**
+		 * @brief Construtor default.
+		 */
 		Date();
-
-		/** Construtor com argumentos. Não faz verificação da entrada */
+		/**
+		 * @brief Construtor com argumentos. Não faz verificação da entrada.
+		 * @param diaP - Dia
+		 * @param mesP - Mês
+		 * @param anoP - Ano
+		 * @param horaP - Hora
+		 * @param minP - Minuto
+		 * @param segP - Segundo
+		 */
 		Date(int diaP, int mesP, int anoP, int horaP, int minP, int segP);
 
-		/** Destrutor */
+		/**
+		 * @brief Destrutor.
+		 */
 		~Date();
 
 };
