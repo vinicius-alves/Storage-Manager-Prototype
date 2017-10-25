@@ -20,4 +20,6 @@ O arquivo main.cpp apenas faz importação das classes desenvolvidas e inicializ
 
 O código está autodocumentado, também foi gerada documentação em HTML.
 
-Link: https://vinicius-alves.github.io/Storage-Manager-Prototype/files.html
+Link: https://vinicius-alves.github.io/Storage-Manager-Prototype/annotated.html
+
+Este HTML também está presente na pasta docs, acessível através do arquivo index.html.
