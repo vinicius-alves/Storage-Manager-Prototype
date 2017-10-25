@@ -11,15 +11,24 @@ using namespace std;
 #define BLOCK_H
 
 /**
- * Descrição da classe Block
+ * Classe que representa um bloco de dados
  */
 class Block{
 
 	private:
+		/** Identificador do bloco */
 		unsigned int id;
 
 	public:
-		Block(unsigned int);
+		/**
+		 * @brief Construtor
+		 * @param id - Identificador do bloco
+		 */
+		Block(unsigned int id);
+
+		/**
+		 * @brief Destrutor
+		 */
 		~Block();
 
 };
